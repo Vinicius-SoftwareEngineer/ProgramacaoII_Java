@@ -1,7 +1,7 @@
 public class Livro {
-    String titulo, autor;
-    int qtpag;
-    boolean emprestado;
+    private String titulo, autor;
+    private int qtpag;
+    private boolean emprestado;
 
     public void emprestar(){
         emprestado = true;
@@ -22,4 +22,11 @@ public class Livro {
         }
     }
 
+    public String getTitulo() {
+        return titulo;
+    }
+
+    public void setTitulo(String titulo) {
+        this.titulo = titulo;
+    }
 }
