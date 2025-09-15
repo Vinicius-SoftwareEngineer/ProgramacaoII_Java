@@ -50,7 +50,7 @@ public class Bilheteria {
         }
 
         for (Venda.Ingresso i : v.getIngressos()) {
-            switch (i.getTipoAplicado()) { // usar getter
+            switch (i.getTipoAplicado()) {
                 case Venda.INTEIRA: qtdInteira++; break;
                 case Venda.MEIA: qtdMeia++; break;
                 case Venda.PROMOCIONAL: qtdPromo++; break;
