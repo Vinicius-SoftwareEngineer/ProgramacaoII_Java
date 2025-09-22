@@ -8,9 +8,7 @@ public class TelaComprovante extends TelaBase {
     public TelaComprovante(String convenio, String regiaoDor, String tempoDor) {
         super("Comprovante de Atendimento");
 
-        // Define o tamanho específico para esta tela, sobrescrevendo o da TelaBase
         setSize(800, 700);
-        // Garante que a janela fique centralizada após a mudança de tamanho
         setLocationRelativeTo(null);
 
         String senhaAtendimento = "A-" + String.format("%03d", (int)(Math.random() * 999) + 1);

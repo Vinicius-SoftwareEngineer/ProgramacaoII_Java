@@ -10,7 +10,7 @@ public class TelaDor extends TelaBase {
         JPanel panel = criarPainelGradiente();
         setContentPane(panel);
         panel.setLayout(new BorderLayout(0, 20));
-        panel.setBorder(BorderFactory.createEmptyBorder(80, 150, 0, 150));
+        panel.setBorder(BorderFactory.createEmptyBorder(60, 150, 0, 150));
 
         JPanel textPanel = new JPanel();
         textPanel.setOpaque(false);
@@ -44,7 +44,7 @@ public class TelaDor extends TelaBase {
 
             String nomeArquivo = regiao.toLowerCase().replace(" ", "");
             try {
-                Image img = new ImageIcon(getClass().getResource("/resources/" + nomeArquivo + ".png")).getImage().getScaledInstance(80, 80, Image.SCALE_SMOOTH);
+                Image img = new ImageIcon(getClass().getResource("/resources/" + nomeArquivo + ".png")).getImage().getScaledInstance(75, 75, Image.SCALE_SMOOTH);
                 btn.setIcon(new ImageIcon(img));
             } catch (Exception e) { System.err.println("Imagem não encontrada: " + nomeArquivo + ".png"); }
 
@@ -63,7 +63,7 @@ public class TelaDor extends TelaBase {
             gbc.weightx = 1.0;
             gbc.weighty = 1.0;
             gbc.fill = GridBagConstraints.BOTH;
-            gbc.insets = new Insets(15, 15, 15, 15);
+            gbc.insets = new Insets(10, 15, 10, 15);
 
             botoesPanel.add(btn, gbc);
         }

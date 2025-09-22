@@ -34,7 +34,7 @@ public class TelaConvenio extends TelaBase {
         JPanel botoesPanel = new JPanel(new FlowLayout(FlowLayout.CENTER, 30, 20));
         botoesPanel.setOpaque(false);
 
-        String[] convenios = {"unimed", "amil", "sulamerica", "hapvida", "Particular"};
+        String[] convenios = {"Unimed", "Amil", "SulAmerica", "Hapvida", "Particular"};
         for (String nomeConvenio : convenios) {
             RoundedButton btn = new RoundedButton("", new Color(55, 48, 163, 150), new Color(94, 23, 235, 100), new Color(150, 100, 250, 150));
             btn.setPreferredSize(new Dimension(200, 120));

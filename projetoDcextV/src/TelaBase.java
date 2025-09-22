@@ -12,7 +12,6 @@ public class TelaBase extends JFrame {
     }
 
     protected void adicionarNavegacao(JPanel painelPrincipal, boolean mostrarVoltar, JFrame telaAnterior) {
-        // --- Painel para LIBRAS (canto direito) ---
         ImageIcon handIcon = null;
         try {
             Image img = new ImageIcon(getClass().getResource("/resources/libras_hand.png")).getImage().getScaledInstance(60, 60, Image.SCALE_SMOOTH);
@@ -38,7 +37,6 @@ public class TelaBase extends JFrame {
         rightPanel.add(librasPanel);
         rightPanel.setBorder(BorderFactory.createEmptyBorder(0, 0, 20, 40));
 
-        // --- Painel para VOLTAR (canto esquerdo) ---
         JPanel leftPanel = new JPanel(new FlowLayout(FlowLayout.LEFT));
         leftPanel.setOpaque(false);
         leftPanel.setBorder(BorderFactory.createEmptyBorder(0, 40, 20, 0));
